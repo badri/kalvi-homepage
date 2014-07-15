@@ -1,0 +1,111 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+/* line 6, ../sass/style.scss */
+body {
+  background: #fff;
+}
+
+/* line 11, ../sass/style.scss */
+h3 {
+  font-size: 25px;
+}
+
+/* line 15, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: #6f21Cf;
+}
+/* line 18, ../sass/style.scss */
+a:visited {
+  color: #c41b4b;
+}
+/* line 21, ../sass/style.scss */
+a:hover {
+  color: #410c82;
+}
+
+/* line 26, ../sass/style.scss */
+#container {
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../home/lakshmi/.rvm/gems/ruby-2.1.2/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 30, ../sass/style.scss */
+#nav-links ul {
+  list-style: none;
+}
+/* line 11, ../../../../../home/lakshmi/.rvm/gems/ruby-2.1.2/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+#nav-links ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 32, ../sass/style.scss */
+#nav-links ul li a p {
+  color: #000;
+  font-size: 13px;
+}
+
+/* line 38, ../sass/style.scss */
+#masthead {
+  height: 200px;
+  background: #ccc;
+}
+
+/* line 43, ../sass/style.scss */
+footer {
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../home/lakshmi/.rvm/gems/ruby-2.1.2/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 45, ../sass/style.scss */
+footer ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 60, ../../../../../home/lakshmi/.rvm/gems/ruby-2.1.2/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+footer ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../home/lakshmi/.rvm/gems/ruby-2.1.2/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+footer ul li:first-child, footer ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../home/lakshmi/.rvm/gems/ruby-2.1.2/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+footer ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../home/lakshmi/.rvm/gems/ruby-2.1.2/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+footer ul li.last {
+  padding-right: 0;
+}

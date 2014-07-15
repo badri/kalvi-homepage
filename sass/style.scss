@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import "compass";
+@import "susy";
+
+
+body {
+  @include layout(12 1/4 fluid float inside);
+  background: #fff;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #6f21Cf;
+  &:visited {
+    color: #c41b4b;
+  }
+  &:hover {
+    color: #410c82;
+  }
+}
+
+#container {
+  @include container;
+}
+
+#nav-links ul {
+  @include no-bullets;
+  li a p {
+    color: #000;
+    font-size: 13px;
+  }
+}
+
+#masthead {
+  height: 200px;   
+  background: #ccc;
+}
+
+footer {
+  @include container;
+ ul {
+   @include horizontal-list;
+ } 
+}
