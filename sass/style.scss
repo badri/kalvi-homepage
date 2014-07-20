@@ -1,34 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Coustard);
 @import "normalize";
 @import "compass";
 @import "susy";
 
-
-$title-font: 'Coustard', serif;
-$text-font: 'Droid Sans', sans-serif;
-
-
-$link-color: #6f21cf;
-$link-color-visited: #c41b4b;
-$link-color-hover: #410c82;
-$icon-color: #111;
-
-
-$masthead-background: url(http://subtlepatterns.com/patterns/congruent_outline.png);
-
-$footer-background: #fb4679;
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $title-font;
-}
-
-p, div {
- font-family: $text-font;
-}
-
-a {
-  font-family: $title-font;
-}
+@import "typography";
+@import "colors";
 
 body {
   background: #fff;
@@ -137,7 +112,7 @@ a {
   position: relative;
   width: 100px; 
   height: 57.74px;
-  background-color: #ccac64;
+  background-color: $hexagon-color;
   margin: 28.87px 0;
   box-shadow: 0 0 20px rgba(0,0,0,0.6);
   left: 100px;
@@ -223,3 +198,5 @@ footer {
   }   
  } 
 }
+
+@import "page";

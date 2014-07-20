@@ -1,0 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Coustard);
+$title-font: 'Coustard', serif;
+$text-font: 'Droid Sans', sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title-font;
+}
+
+p, div {
+ font-family: $text-font;
+}
+
+a {
+  font-family: $title-font;
+}
+
