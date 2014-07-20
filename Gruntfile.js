@@ -31,6 +31,7 @@ module.exports = function(grunt) {
         fontsDir: 'css/fonts',
         assetCacheBuster: 'none',
         require: [
+	  'compass-normalize',
           'sass-globbing',
           'susy',
           'breakpoint'

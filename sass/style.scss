@@ -1,48 +1,225 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Coustard);
+@import "normalize";
 @import "compass";
 @import "susy";
 
 
+$title-font: 'Coustard', serif;
+$text-font: 'Droid Sans', sans-serif;
+
+
+$link-color: #6f21cf;
+$link-color-visited: #c41b4b;
+$link-color-hover: #410c82;
+$icon-color: #111;
+
+
+$masthead-background: url(http://subtlepatterns.com/patterns/congruent_outline.png);
+
+$footer-background: #fb4679;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title-font;
+}
+
+p, div {
+ font-family: $text-font;
+}
+
+a {
+  font-family: $title-font;
+}
+
 body {
-  @include layout(12 1/4 fluid float inside);
   background: #fff;
 }
 
-h3 {
-  font-size: 25px;
+header {
+  background: #111;
+  height: 60px;
+  .fa {
+    padding-right: 5px;
+  }
+  border-bottom: 4px solid #ccc;
+}
+
+#header-top {
+  padding: 20px;
+  a {
+    color: #eee;
+  }
+}
+
+#brand {
+  float: left;
+    &:hover {
+      color: #ccc;
+    }
+}
+
+#links {
+  @include no-bullets;
+  a {
+    font-size: 14px;
+    font-family: $text-font;
+    text-transform: uppercase;
+    margin-left: 20px;
+    &:hover {
+      border-bottom: 2px #eee dotted;
+    }
+  }
+  float: right;
+  margin: 0;
+}
+
+#title {
+  font-size: 52px;
+  padding: 20px 0 0 0;
+  margin: 0;
+  text-align: center;
+  color: #eee;
+  @include text-shadow(rgba(#111, 0.4) 1px 1px 0, rgba(#111, 0.4) 2px 2px 0, rgba(#111, 0.4) 5px 5px 0);
+}
+
+#container {
+  margin-top: 40px;
+  height: auto;
+  min-height: 100%;
+  margin-bottom: -134px;
+  &:after {
+    content: "";
+    display: block;
+    height: 134px;
+  }
 }
 
 a {
   text-decoration: none;
-  color: #6f21Cf;
+  color: $link-color;
   &:visited {
-    color: #c41b4b;
+    color: $link-color-visited;
   }
   &:hover {
-    color: #410c82;
+    color: $link-color-hover;
   }
-}
-
-#container {
-  @include container;
 }
 
 #nav-links ul {
+  @include container(80em);
   @include no-bullets;
+  li {
+    @include gallery(2 of 8);
+    padding-bottom: 20px;
+    text-align: center;
+    h3 {
+      margin-bottom: 0px;
+      color: #2c3e50;
+      text-transform: uppercase;
+      padding-top: 20px;
+    }
+    .fa {
+      margin-left: 12px;
+      margin-top: 5px;
+      color: $icon-color;
+    }
+    .fa-cubes, .fa-comments, .fa-cloud-download, .fa-drupal, .fa-wrench, .fa-compass {
+      margin-left: 0px;
+    }
+  }
   li a p {
-    color: #000;
-    font-size: 13px;
+    color: #111;
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 
+.hexagon {
+  position: relative;
+  width: 100px; 
+  height: 57.74px;
+  background-color: #ccac64;
+  margin: 28.87px 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  left: 100px;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 70.71px;
+  height: 70.71px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 14.6447px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.hexagon:before {
+  top: -35.3553px;
+}
+
+.hexagon:after {
+  bottom: -35.3553px;
+}
+
+/*cover up extra shadows*/
+.hexagon span {
+  display: block;
+  position: absolute;
+  top:0px;
+  left: 0;
+  width:100px;
+  height:57.7350px;
+  z-index: 2;
+  background: inherit;
+}
+
+
+
 #masthead {
-  height: 200px;   
-  background: #ccc;
+  height: 230px;
+  background: $masthead-background;
+  text-align: center;
+  margin: 0;
+  pading: 0;
+  p {
+    font-family: $text-font;
+    font-size: 18px;
+    color: #eee;
+    padding-bottom: 20px;
+  }
+}
+
+#subscribe {
+  font-family: $text-font;
+  font-size: 14px;
+  color: #eee;
+  text-transform: uppercase;
+  padding: 10px 20px 10px 20px;
+  border: 2px solid #eee;
 }
 
 footer {
-  @include container;
+ height: 134px;
+ background: $footer-background;
+ border-top: 4px solid darken($footer-background, 30%);
  ul {
-   @include horizontal-list;
+   padding: 20px;
+   @include container(60em);
+   @include no-bullets;
+   a {
+    color: #ccc;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: $text-font;
+    font-weight: bold;
+    &:hover {
+      color: #eee;
+    }
+  }   
  } 
 }
