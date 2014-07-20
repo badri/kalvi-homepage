@@ -101,11 +101,6 @@ a {
       margin-left: 0px;
     }
   }
-  li a p {
-    color: #111;
-    font-size: 16px;
-    line-height: 18px;
-  }
 }
 
 .hexagon {
@@ -115,7 +110,7 @@ a {
   background-color: $hexagon-color;
   margin: 28.87px 0;
   box-shadow: 0 0 20px rgba(0,0,0,0.6);
-  left: 100px;
+  left: 60px;
 }
 
 .hexagon:before,

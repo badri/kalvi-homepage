@@ -273,13 +273,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 9, ../sass/_typography.scss */
-p, div {
+div {
   font-family: "Droid Sans", sans-serif;
 }
 
 /* line 13, ../sass/_typography.scss */
+p {
+  font-family: "Droid Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.4em;
+  font-size: 14px;
+}
+
+/* line 21, ../sass/_typography.scss */
 a {
   font-family: "Coustard", serif;
+}
+
+/* line 14, ../sass/_colors.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #222222;
+}
+
+/* line 18, ../sass/_colors.scss */
+p {
+  color: #222222;
 }
 
 /* line 8, ../sass/style.scss */
@@ -446,14 +464,8 @@ a:hover {
 #nav-links ul li .fa-cubes, #nav-links ul li .fa-comments, #nav-links ul li .fa-cloud-download, #nav-links ul li .fa-drupal, #nav-links ul li .fa-wrench, #nav-links ul li .fa-compass {
   margin-left: 0px;
 }
-/* line 104, ../sass/style.scss */
-#nav-links ul li a p {
-  color: #111;
-  font-size: 16px;
-  line-height: 18px;
-}
 
-/* line 111, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .hexagon {
   position: relative;
   width: 100px;
@@ -461,10 +473,10 @@ a:hover {
   background-color: #ccac64;
   margin: 28.87px 0;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  left: 100px;
+  left: 60px;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .hexagon:before,
 .hexagon:after {
   content: "";
@@ -480,18 +492,18 @@ a:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
-/* line 136, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .hexagon:before {
   top: -35.3553px;
 }
 
-/* line 140, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .hexagon:after {
   bottom: -35.3553px;
 }
 
 /*cover up extra shadows*/
-/* line 145, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .hexagon span {
   display: block;
   position: absolute;
@@ -503,7 +515,7 @@ a:hover {
   background: inherit;
 }
 
-/* line 158, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 #masthead {
   height: 230px;
   background: url(http://subtlepatterns.com/patterns/congruent_outline.png);
@@ -511,7 +523,7 @@ a:hover {
   margin: 0;
   pading: 0;
 }
-/* line 164, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 #masthead p {
   font-family: "Droid Sans", sans-serif;
   font-size: 18px;
@@ -519,7 +531,7 @@ a:hover {
   padding-bottom: 20px;
 }
 
-/* line 172, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 #subscribe {
   font-family: "Droid Sans", sans-serif;
   font-size: 14px;
@@ -529,13 +541,13 @@ a:hover {
   border: 2px solid #eee;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 footer {
   height: 134px;
   background: #fb4679;
   border-top: 4px solid #a40431;
 }
-/* line 185, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 footer ul {
   padding: 20px;
   max-width: 60em;
@@ -555,7 +567,7 @@ footer ul li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 189, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 footer ul a {
   color: #ccc;
   text-transform: uppercase;
@@ -563,7 +575,7 @@ footer ul a {
   font-family: "Droid Sans", sans-serif;
   font-weight: bold;
 }
-/* line 195, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 footer ul a:hover {
   color: #eee;
 }
@@ -589,6 +601,17 @@ footer ul a:hover {
 }
 
 /* line 9, ../sass/_page.scss */
+#topics {
+  list-style: none;
+}
+/* line 11, ../../../../../home/lakshmi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/typography/lists/_bullets.scss */
+#topics li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 13, ../sass/_page.scss */
 #page {
   width: 66.10169%;
   float: right;
